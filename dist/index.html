@@ -24,22 +24,22 @@
                     <button class="px-8 bg-primary border border-primary text-white  rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
                 </div>
                 <!-- icons -->
-                <div class="flex items-center space-x-4">
-                    <a href="#" class="text-center text-gray-700 text-primary transition relative">
+                <div class="flex items-center space-x-4 ">
+                    <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
                         <div class="text-2xl">
                             <i class="far fa-heart"></i>
                         </div>
                         <div class="text-xs leading-3">Wish list</div>
                         <span class="absolute right-0 -top-1 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">8</span>
                     </a>
-                    <a href="#" class="text-center text-gray-700 text-primary transition relative">
+                    <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
                         <div class="text-2xl">
                             <i class="fas fa-shopping-bag"></i>
                         </div>
                         <div class="text-xs leading-3">Cart</div>
                         <span class="absolute -right-3 -top-1 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">8</span>
                     </a>
-                    <a href="#" class="text-center text-gray-700 text-primary transition ">
+                    <a href="#" class="text-center text-gray-700 hover:text-primary transition ">
                         <div class="text-2xl">
                             <i class="far fa-user"></i>
                         </div>
@@ -54,13 +54,39 @@
     <nav class="bg-gray-800 ">
         <div class="container flex">
             <!-- all categories -->
-            <div class="flex items-center justify-center cursor-pointer bg-primary py-4 px-8 ">
+            <div class="flex items-center justify-center cursor-pointer bg-primary py-4 px-8 relative group">
                 <span class="text-white "><i class="fas fa-bars"></i></span>
-                <span class="text-white ml-2 capitalize">All categories</span>
+                <span class="text-white ml-2 capitalize ">All categories</span>
+
+                <div class="absolute w-full left-0  top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-500 invisible group-hover:visible">
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/icons/bed.svg" class="w-5 h-5 object-contain" alt="" >
+                        <span class="ml-6 text-sm text-gray-600">Bedroom</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/icons/sofa.svg" class="w-5 h-5 object-contain" alt="" >
+                        <span class="ml-6 text-sm text-gray-600">Sofa</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/icons/office.svg" class="w-5 h-5 object-contain" alt="" >
+                        <span class="ml-6 text-sm text-gray-600">Office</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/icons/outdoor-cafe.svg" class="w-5 h-5 object-contain" alt="" >
+                        <span class="ml-6 text-sm text-gray-600">Outdoor</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/icons/bed-2.svg" class="w-5 h-5 object-contain" alt="" >
+                        <span class="ml-6 text-sm text-gray-600">Matress</span>
+                    </a>
+
+                </div>
             </div>
 
             <!-- navbar links -->
-            <div class="flex flex-grow justify-between items-center ml-12">
+            <div class="flex flex-grow justify-between items-center ml-12 ">
                 <div class="flex items-center capitalize space-x-6">
                     <a href="#" class="text-gray-200 hover:text-white transition">Home</a>
                     <a href="#" class="text-gray-200 hover:text-white transition">Shop</a>
